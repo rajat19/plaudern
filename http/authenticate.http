@@ -1,0 +1,22 @@
+# curl 'http://localhost:3030/users/'
+#  -H 'Content-Type: application/json'
+#  --data-binary '{ "email": "hello@feathersjs.com", "password": "supersecret" }'
+POST {{host}}/users/
+Content-Type: application/json
+
+{ "email": "hello@feathersjs.com", "password": "supersecret" }
+
+###
+
+# curl 'http://localhost:3030/authentication/'
+#  -H 'Content-Type: application/json'
+#  --data-binary '{ "strategy": "local", "email": "hello@feathersjs.com", "password": "supersecret" }'
+POST {{host}}/authentication/
+Content-Type: application/json
+
+{ "strategy": "local", "email": "hello@feathersjs.com", "password": "supersecret" }
+
+###
+
+
+
